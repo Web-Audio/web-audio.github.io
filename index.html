@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="VOIS.AI">
     <title>VOIS.AI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="container">
     <section>
-      <h1 class="center" id="headline">VOIS.AI</h1>
-      <div id="info">
+      <h1 class="center" class="display-1">VOIS.AI</h1>
+      <div class="row" id="info">
         <p id="info_start">Click on the microphone icon and begin speaking.</p>
         <p id="info_speak_now">Speak now.</p>
         <p id="info_no_speech">No speech was detected.</p>
-        <p id="info_no_microphone" style="display:none"> No microphone was found.</p>
+        <p id="info_no_microphone"> No microphone was found.</p>
         <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
         <p id="info_denied">Permission to use microphone was denied.</p>
         <p id="info_blocked">Permission to use microphone is blocked.</p>
         <p id="info_upgrade">Web Speech API is not supported by this browser.</p>
       </div>
-      <div class="right">
+      <div class="row center">
         <button id="start_button" onclick="startButton(event)">
           <img id="start_img" src="mic.gif" alt="Start"></button>
       </div>
-      <div id="results">
+      <div class="row" id="results">
         <span id="final_span" class="final"></span>
         <span id="interim_span" class="interim"></span>
         <p>
       </div>
+    </section>
+    <section class="">
+      <div class="row center" id="analytics">
+        <p id="results_text">Some text here...</p>
+      </div>
+    </section>
   </body>
   <script src="app.js"></script>
 </html>

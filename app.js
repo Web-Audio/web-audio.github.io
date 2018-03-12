@@ -1,10 +1,10 @@
-
 showInfo('info_start');
 
 var final_transcript = '';
 var recognizing = false;
 var ignore_onend;
 var start_timestamp;
+
 if (!('webkitSpeechRecognition' in window)) {
   upgrade();
 } else {
@@ -57,17 +57,20 @@ if (!('webkitSpeechRecognition' in window)) {
       range.selectNode(document.getElementById('final_span'));
       window.getSelection().addRange(range);
     }
-    if (create_email) {
-      create_email = false;
-      createEmail();
-    }
+    // if (create_email) {
+    //   create_email = false;
+    //   createEmail();
+    // }
   };
 
   recognition.onresult = function(event) {
+
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
+        results_text.innerHTML = final_transcript;
+
       } else {
         interim_transcript += event.results[i][0].transcript;
       }
@@ -75,9 +78,9 @@ if (!('webkitSpeechRecognition' in window)) {
     final_transcript = capitalize(final_transcript);
     final_span.innerHTML = linebreak(final_transcript);
     interim_span.innerHTML = linebreak(interim_transcript);
-    if (final_transcript || interim_transcript) {
-      showButtons('inline-block');
-    }
+    // if (final_transcript || interim_transcript) {
+    //   showButtons('inline-block');
+    // }
   };
 }
 
@@ -88,23 +91,15 @@ function upgrade() {
 
 var two_line = /\n\n/g;
 var one_line = /\n/g;
+
 function linebreak(s) {
   return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
 }
 
 var first_char = /\S/;
+
 function capitalize(s) {
   return s.replace(first_char, function(m) { return m.toUpperCase(); });
-}
-
-function createEmail() {
-  var n = final_transcript.indexOf('\n');
-  if (n < 0 || n >= 80) {
-    n = 40 + final_transcript.substring(40).indexOf(' ');
-  }
-  var subject = encodeURI(final_transcript.substring(0, n));
-  var body = encodeURI(final_transcript.substring(n + 1));
-  window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
 }
 
 function startButton(event) {
@@ -113,14 +108,13 @@ function startButton(event) {
     return;
   }
   final_transcript = '';
-  // recognition.lang = select_dialect.value;
   recognition.start();
   ignore_onend = false;
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
   start_img.src = 'mic-slash.gif';
   showInfo('info_allow');
-  showButtons('none');
+  // showButtons('none');
   start_timestamp = event.timeStamp;
 }
 
@@ -135,12 +129,4 @@ function showInfo(s) {
   } else {
     info.style.visibility = 'hidden';
   }
-}
-
-var current_style;
-function showButtons(style) {
-  if (style == current_style) {
-    return;
-  }
-  current_style = style;
 }

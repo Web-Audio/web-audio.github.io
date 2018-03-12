@@ -1,15 +1,12 @@
 * {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Helvetica-Neue, Arial, sans-serif;
   }
-  a:link {
-    color:#000;
-    text-decoration: none;
-  }
-  a:visited {
-    color:#000;
-  }
-  a:hover {
-    color:#33F;
+  h1 {
+    font-family: Futura, sans-serif;
+    font-size: 4em;
+    margin: 20px 0;
+    font-weight: 400;
+    color: #FFA500;
   }
   .button {
     background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
@@ -42,20 +39,6 @@
     color: #777;
     display: none;
   }
-  .right {
-    float: right;
-  }
-  .sidebyside {
-    display: inline-block;
-    width: 45%;
-    min-height: 40px;
-    text-align: left;
-    vertical-align: top;
-  }
-  #headline {
-    font-size: 40px;
-    font-weight: 300;
-  }
   #info {
     font-size: 20px;
     text-align: center;
@@ -69,9 +52,10 @@
     padding: 15px;
     text-align: left;
     min-height: 150px;
+    margin: 10px 80px;
   }
   #start_button {
     border: 0;
-    background-color:transparent;
+    background-color: transparent;
     padding: 0;
   }
