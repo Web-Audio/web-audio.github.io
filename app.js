@@ -57,19 +57,19 @@ if (!('webkitSpeechRecognition' in window)) {
       range.selectNode(document.getElementById('final_span'));
       window.getSelection().addRange(range);
     }
-    // if (create_email) {
-    //   create_email = false;
-    //   createEmail();
-    // }
+    
+    console.log("length");
+    console.log(event.results.length);
   };
 
   recognition.onresult = function(event) {
 
     var interim_transcript = '';
-    console.log("length");
-    console.log(event.results.length);
 
     for (var i = event.resultIndex; i < event.results.length; ++i) {
+      console.log("length");
+      console.log(event.results.length);
+
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
         console.log("final_transcript");
