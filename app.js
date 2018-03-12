@@ -1,25 +1,6 @@
-var langs = ["English"];
 
-for (var i = 0; i < langs.length; i++) {
-  select_language.options[i] = new Option(langs[i][0], i);
-}
-select_language.selectedIndex = 6;
-updateCountry();
-select_dialect.selectedIndex = 6;
 showInfo('info_start');
 
-function updateCountry() {
-  for (var i = select_dialect.options.length - 1; i >= 0; i--) {
-    select_dialect.remove(i);
-  }
-  var list = langs[select_language.selectedIndex];
-  for (var i = 1; i < list.length; i++) {
-    select_dialect.options.add(new Option(list[i][1], list[i][0]));
-  }
-  select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
-}
-
-var create_email = false;
 var final_transcript = '';
 var recognizing = false;
 var ignore_onend;
@@ -126,36 +107,13 @@ function createEmail() {
   window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
 }
 
-function copyButton() {
-  if (recognizing) {
-    recognizing = false;
-    recognition.stop();
-  }
-  copy_button.style.display = 'none';
-  copy_info.style.display = 'inline-block';
-  showInfo('');
-}
-
-function emailButton() {
-  if (recognizing) {
-    create_email = true;
-    recognizing = false;
-    recognition.stop();
-  } else {
-    createEmail();
-  }
-  email_button.style.display = 'none';
-  email_info.style.display = 'inline-block';
-  showInfo('');
-}
-
 function startButton(event) {
   if (recognizing) {
     recognition.stop();
     return;
   }
   final_transcript = '';
-  recognition.lang = select_dialect.value;
+  // recognition.lang = select_dialect.value;
   recognition.start();
   ignore_onend = false;
   final_span.innerHTML = '';
@@ -185,8 +143,4 @@ function showButtons(style) {
     return;
   }
   current_style = style;
-  copy_button.style.display = style;
-  email_button.style.display = style;
-  copy_info.style.display = 'none';
-  email_info.style.display = 'none';
 }
