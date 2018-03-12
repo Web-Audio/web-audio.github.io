@@ -66,13 +66,18 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.onresult = function(event) {
 
     var interim_transcript = '';
+    console.log("length");
+    console.log(event.results.length);
+
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final_transcript += event.results[i][0].transcript;
-        results_text.innerHTML = final_transcript;
-
+        console.log("final_transcript");
+        console.log(final_transcript);
       } else {
         interim_transcript += event.results[i][0].transcript;
+        console.log("interim_transcript");
+        console.log(interim_transcript);
       }
     }
     final_transcript = capitalize(final_transcript);
