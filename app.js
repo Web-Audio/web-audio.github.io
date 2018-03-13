@@ -1,137 +1,91 @@
-showInfo('info_start');
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-var final_transcript = '';
-var recognizing = false;
-var ignore_onend;
-var start_timestamp;
+let arr = [];
+let textstring = "";
 
-if (!('webkitSpeechRecognition' in window)) {
-  upgrade();
-} else {
-  start_button.style.display = 'inline-block';
-  var recognition = new webkitSpeechRecognition();
-  recognition.continuous = true;
-  recognition.interimResults = true;
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+recognition.lang = 'en-US';
 
-  recognition.onstart = function() {
-    recognizing = true;
-    showInfo('info_speak_now');
-    start_img.src = 'mic-animate.gif';
-  };
+let p = document.createElement('p');
+const words = document.querySelector('.words');
+words.appendChild(p);
 
-  recognition.onerror = function(event) {
-    if (event.error == 'no-speech') {
-      start_img.src = 'mic.gif';
-      showInfo('info_no_speech');
-      ignore_onend = true;
+recognition.addEventListener('result', e => {
+  const transcript = Array.from(e.results)
+    .map(result => result[0])
+    .map(result => result.transcript)
+    .join('');
+
+    const replaceScript = transcript.replace(/hello/gi, 'HELLO')
+                          .replace(/like/gi, 'LIKE')
+                          .replace(/well/gi, 'WELL')
+                          .replace(/testing/gi, 'TESTING');
+    p.textContent = replaceScript;
+
+    if (e.results[0].isFinal) {
+      p = document.createElement('p');
+      words.appendChild(p);
+      textstring += transcript + " ";
+      console.log(textstring);
     }
-    if (event.error == 'audio-capture') {
-      start_img.src = 'mic.gif';
-      showInfo('info_no_microphone');
-      ignore_onend = true;
-    }
-    if (event.error == 'not-allowed') {
-      if (event.timeStamp - start_timestamp < 100) {
-        showInfo('info_blocked');
+
+    arr = textstring.split(" ");
+    printResults();
+});
+
+function printResults() {
+  var counts = {}, i, value;
+  for (i = 0; i < arr.length-1; i++) {
+      value = arr[i];
+      if (typeof counts[value] === "undefined") {
+          counts[value] = 1;
       } else {
-        showInfo('info_denied');
+          counts[value]++;
       }
-      ignore_onend = true;
-    }
-  };
-
-  recognition.onend = function() {
-    recognizing = false;
-    if (ignore_onend) {
-      return;
-    }
-    start_img.src = 'mic.gif';
-    if (!final_transcript) {
-      showInfo('info_start');
-      return;
-    }
-    showInfo('');
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-      var range = document.createRange();
-      range.selectNode(document.getElementById('final_span'));
-      window.getSelection().addRange(range);
-    }
-    
-    console.log("length");
-    console.log(event.results.length);
-  };
-
-  recognition.onresult = function(event) {
-
-    var interim_transcript = '';
-
-    for (var i = event.resultIndex; i < event.results.length; ++i) {
-      console.log("length");
-      console.log(event.results.length);
-
-      if (event.results[i].isFinal) {
-        final_transcript += event.results[i][0].transcript;
-        console.log("final_transcript");
-        console.log(final_transcript);
-      } else {
-        interim_transcript += event.results[i][0].transcript;
-        console.log("interim_transcript");
-        console.log(interim_transcript);
-      }
-    }
-    final_transcript = capitalize(final_transcript);
-    final_span.innerHTML = linebreak(final_transcript);
-    interim_span.innerHTML = linebreak(interim_transcript);
-    // if (final_transcript || interim_transcript) {
-    //   showButtons('inline-block');
-    // }
-  };
-}
-
-function upgrade() {
-  start_button.style.visibility = 'hidden';
-  showInfo('info_upgrade');
-}
-
-var two_line = /\n\n/g;
-var one_line = /\n/g;
-
-function linebreak(s) {
-  return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
-}
-
-var first_char = /\S/;
-
-function capitalize(s) {
-  return s.replace(first_char, function(m) { return m.toUpperCase(); });
-}
-
-function startButton(event) {
-  if (recognizing) {
-    recognition.stop();
-    return;
   }
-  final_transcript = '';
-  recognition.start();
-  ignore_onend = false;
-  final_span.innerHTML = '';
-  interim_span.innerHTML = '';
-  start_img.src = 'mic-slash.gif';
-  showInfo('info_allow');
-  // showButtons('none');
-  start_timestamp = event.timeStamp;
-}
 
-function showInfo(s) {
-  if (s) {
-    for (var child = info.firstChild; child; child = child.nextSibling) {
-      if (child.style) {
-        child.style.display = child.id == s ? 'inline' : 'none';
-      }
+  // console.log(Object.entries(counts));
+  for(var i in counts){
+    var output = i.toUpperCase() + ' occured ' + counts[i] + ' times';
+    if (counts[i] > 2) {
+      console.log(output);
+      document.getElementById("analytics_count").innerHTML += output + "<br/>";
     }
-    info.style.visibility = 'visible';
-  } else {
-    info.style.visibility = 'hidden';
   }
 }
+
+recognition.addEventListener('end', recognition.start);
+
+recognition.start();
+
+// D3.js charts
+// var data = [4, 8, 15, 16, 23, 42];
+//
+// d3.select(".chart")
+//   .selectAll("div")
+//   .data(data)
+//     .enter()
+//     .append("div")
+//     .style("width", function(d) { return d * 4 + "px"})
+//     .text(function(d) { return d; });
+
+// function wordFreq(string) {
+// 	return string.replace(/[.]/g, '')
+//   	.split(/\s/)
+//     .reduce((map, word) =>
+//     	Object.assign(map, {
+//       	[word]: (map[word])
+//         	? map[word] + 1
+//           : 1,
+//       }),
+//     	{}
+//     );
+// }
+
+// var freq = wordFreq(textstring);
+
+// Object.keys(freq).sort().forEach(function(word) {
+//   if (freq[word] > 3)
+//     console.log("count of " + word + " is " + freq[word]);
+// });

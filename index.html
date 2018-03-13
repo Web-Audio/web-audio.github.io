@@ -10,33 +10,24 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="container">
-    <section>
-      <h1 class="center" class="display-1">VOIS.AI</h1>
-      <div class="row" id="info">
-        <p id="info_start">Click on the microphone icon and begin speaking.</p>
-        <p id="info_speak_now">Speak now.</p>
-        <p id="info_no_speech">No speech was detected.</p>
-        <p id="info_no_microphone"> No microphone was found.</p>
-        <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
-        <p id="info_denied">Permission to use microphone was denied.</p>
-        <p id="info_blocked">Permission to use microphone is blocked.</p>
-        <p id="info_upgrade">Web Speech API is not supported by this browser.</p>
-      </div>
-      <div class="row center">
-        <button id="start_button" onclick="startButton(event)">
-          <img id="start_img" src="mic.gif" alt="Start"></button>
-      </div>
-      <div class="row" id="results">
-        <span id="final_span" class="final"></span>
-        <span id="interim_span" class="interim"></span>
-        <p>
-      </div>
+    <section class="row">
+      <h1>VOIS.AI</h1>
+      <h4>You can start speaking anytime.</h4>
     </section>
-    <section class="">
-      <div class="row center" id="analytics">
-        <p id="results_text">Some text here...</p>
-      </div>
-    </section>
+    <div class="words" contenteditable>
+    </div>
+    <div class="analytics" contenteditable>
+      <h3>Analytics</h3>
+      <div class="counter" id="analytics_count"></div>
+      <p id="word1"></p>
+      <p id="word2"></p>
+      <p id="word3"></p>
+      <p id="word4"></p>
+      <p id="word5"></p>
+    </div>
+    <!-- <button onclick="analyzeSpeech()">Analyze </button> -->
+    <!-- <div class="chart"></div> -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
   <script src="app.js"></script>
 </html>

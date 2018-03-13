@@ -1,57 +1,43 @@
-* {
-  font-family: Helvetica-Neue, Arial, sans-serif;
+html {
+  font-size: 12px;
 }
-h1 {
-  font-family: Futura, sans-serif;
-  font-size: 4em;
-  margin: 20px 0;
-  font-weight: 400;
-  color: #FFA500;
-}
-.button {
-  background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
-  border: 1px solid #076bd2;
-  color: #fff;
-  display: none;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1.3;
-  padding: 8px 25px;
-  text-align: center;
-}
-.center {
-  padding: 10px;
-  text-align: center;
-}
-.final {
-  color: black;
-  padding-right: 3px;
-}
-.interim {
-  color: gray;
-}
-.info {
-  font-size: 14px;
-  text-align: center;
-  color: #777;
-  display: none;
-}
-#info {
+
+body {
+  background: #d2691e;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
   font-size: 20px;
+}
+
+h1 {
+  font-weight: 400px;
+  font-size: 3em;
+  font-family: Futura, sans-serif;
+}
+
+h1, h4 {
+  color: #fafafa;
   text-align: center;
-  color: #777;
-  visibility: hidden;
+  margin-top: 2rem;
 }
-#results {
-  font-size: 14px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: left;
-  min-height: 150px;
-  margin: 10px 80px;
+
+p {
+  margin: 0 0 3rem;
 }
-#start_button {
-  border: 0;
-  background-color: transparent;
-  padding: 0;
+
+.words, .analytics {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+}
+
+.chart > div {
+  background-color: #454545;
+  margin: 10px;
 }
