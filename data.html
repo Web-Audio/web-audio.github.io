@@ -12,21 +12,13 @@
   <body class="container">
     <section class="row">
       <h1>VOIS.AI</h1>
-      <h4>You can start speaking anytime.</h4>
+      <h4>Analytics from your speech.</h4>
     </section>
-    <div class="words" contenteditable>
-    </div>
-    <div class="row">
-      <button class="btn btn-lg btn-default" id="analyze_btn" onclick="analyzefx();">ANALYZE</button>
-    </div>
-    <div class="analytics" style="display:none;" id="analytics_div" contenteditable>
+    <div class="analytics" contenteditable>
       <h3>Analytics</h3>
       <div class="counter" id="analytics_count"></div>
     </div>
-    <!-- <button onclick="analyzeSpeech()">Analyze </button> -->
-    <!-- <div class="chart"></div> -->
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
   <script src="app.js"></script>
 </html>

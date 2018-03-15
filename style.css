@@ -41,3 +41,8 @@ p {
   background-color: #454545;
   margin: 10px;
 }
+
+#analyze_btn {
+  float: right;
+  margin-right: 200px;
+}

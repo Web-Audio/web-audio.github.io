@@ -19,7 +19,9 @@ recognition.addEventListener('result', e => {
 
     const replaceScript = transcript.replace(/hello/gi, 'HELLO')
                           .replace(/like/gi, 'LIKE')
-                          .replace(/well/gi, 'WELL')
+                          .replace(/dog/gi, '🐕')
+                          .replace(/aced/gi, '💯')
+                          .replace(/emoji|emojis/gi, '😁')
                           .replace(/testing/gi, 'TESTING');
     p.textContent = replaceScript;
 
@@ -31,7 +33,7 @@ recognition.addEventListener('result', e => {
     }
 
     arr = textstring.split(" ");
-    printResults();
+    //printResults();
 });
 
 function printResults() {
@@ -44,6 +46,8 @@ function printResults() {
           counts[value]++;
       }
   }
+
+  document.getElementById("analytics_count").innerHTML = "";
 
   // console.log(Object.entries(counts));
   for(var i in counts){
@@ -58,6 +62,17 @@ function printResults() {
 recognition.addEventListener('end', recognition.start);
 
 recognition.start();
+
+recognition.onspeechend = function() {
+  recognition.stop();
+  console.log('Speech recognition has stopped.');
+}
+
+function analyzefx() {
+  document.getElementById('analytics_div').style.display = "block";
+  printResults();
+}
+
 
 // D3.js charts
 // var data = [4, 8, 15, 16, 23, 42];
