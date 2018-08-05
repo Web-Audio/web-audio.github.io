@@ -1,5 +1,5 @@
 ## VOIS.AI  
-Copyright &copy; 2018 Caterina Paun & Ajinkya Shinde
+Copyright &copy; 2018 Caterina Paun 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -19,10 +19,9 @@ Start a local web server to view to application: ```npm start```
 
 You can view and use the application at the following URL: [http://localhost:3000/index.html](http://localhost:3000/index.html)
 
-## Authors
+## Author
 
 * <a href="https://github.com/caterinasworld">Caterina Paun</a>
-* <a href="https://github.com/ajinsh">Ajinkya Shinde</a>
 
 ## License
 
