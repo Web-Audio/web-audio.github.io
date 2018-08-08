@@ -72,35 +72,3 @@ function analyzefx() {
   document.getElementById('analytics_div').style.display = "block";
   printResults();
 }
-
-
-// D3.js charts
-// var data = [4, 8, 15, 16, 23, 42];
-//
-// d3.select(".chart")
-//   .selectAll("div")
-//   .data(data)
-//     .enter()
-//     .append("div")
-//     .style("width", function(d) { return d * 4 + "px"})
-//     .text(function(d) { return d; });
-
-// function wordFreq(string) {
-// 	return string.replace(/[.]/g, '')
-//   	.split(/\s/)
-//     .reduce((map, word) =>
-//     	Object.assign(map, {
-//       	[word]: (map[word])
-//         	? map[word] + 1
-//           : 1,
-//       }),
-//     	{}
-//     );
-// }
-
-// var freq = wordFreq(textstring);
-
-// Object.keys(freq).sort().forEach(function(word) {
-//   if (freq[word] > 3)
-//     console.log("count of " + word + " is " + freq[word]);
-// });
