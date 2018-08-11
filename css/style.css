@@ -1,0 +1,48 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  background: #d2691e;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+h1 {
+  font-weight: 400px;
+  font-size: 3em;
+  font-family: Futura, sans-serif;
+}
+
+h1, h4 {
+  color: #fafafa;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+p {
+  margin: 0 0 3rem;
+}
+
+.words, .analytics {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+}
+
+.chart > div {
+  background-color: #454545;
+  margin: 10px;
+}
+
+#analyze_btn {
+  float: right;
+  margin-right: 200px;
+}
