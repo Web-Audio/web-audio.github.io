@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="VOIS.AI" src="#" width="60" />
+  <img alt="VOIS.AI" src="imgs/logo-60.svg" width="100" />
   <h1 align="center">VOIS.AI</h3>
 </p>
 
