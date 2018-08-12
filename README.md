@@ -11,8 +11,8 @@
   <a href="https://github.com/Web-Audio/web-audio.github.io/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="VOIS.AI is released under the MIT license." />
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/npm/v/gatsby.svg?style=flat-square" alt="Current npm package version." />
+  <a href="https://badge.fury.io/js/npm.svg">
+    <img src="https://badge.fury.io/js/npm.svg" alt="npm package version" />
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
