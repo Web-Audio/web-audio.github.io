@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="VOIS.AI">
-    <title>VOIS.AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VOIS.AI: a web app to transcribe and examine the way a person talks.">
+    <meta name="keywords" content="voice, voice recognition, language analysis, analytics, language processing">
+    <meta name="author" content="Caterina Paun">
+    <title>VOIS.AI - Transcribe and Examine Speech</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
     <section class="row">
@@ -17,14 +18,13 @@
     <div class="words" contenteditable>
     </div>
     <div class="row">
-      <button class="btn btn-lg btn-default" id="analyze_btn" onclick="analyzefx();">ANALYZE</button>
+      <button class="btn btn-lg btn-default" id="analyzeButton" onclick="analyzeSpeech();">ANALYZE</button>
     </div>
-    <div class="analytics" style="display:none;" id="analytics_div" contenteditable>
+    <div class="analytics" style="display:none;" id="analyticsDiv" contenteditable>
       <h3>Analytics</h3>
-      <div class="counter" id="analytics_count"></div>
+      <div class="counter" id="analyticsCount"></div>
     </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
 </html>
