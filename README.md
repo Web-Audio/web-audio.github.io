@@ -1,6 +1,5 @@
 <p align="center">
-  <img alt="VOIS.AI" src="imgs/logo-60.svg" width="100" />
-  <h1 align="center">VOIS.AI</h3>
+  <img alt="VOIS.AI" src="imgs/logo-160-60-transparent.svg" width="300" />
 </p>
 
 <p align="center">
@@ -78,7 +77,10 @@ VOIS.AI is committed to providing a friendly, safe and welcoming environment for
 
 ## 🙋 Credits
 
+### Main Contributors
 * <a href="https://github.com/caterinasworld">Caterina Paun</a>
 
-
+### Articles Used for this Project
+* [HTML5 Speech Recognition API](https://shapeshed.com/html5-speech-recognition-api/)
+* [Remove Stop Words in JavaScript](http://geeklad.com/remove-stop-words-in-javascript)
 
