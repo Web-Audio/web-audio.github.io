@@ -1,12 +1,12 @@
 {
-  "name": "gum",
+  "name": "VOIS.AI",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web app to transcribe and examine the way a person talks.",
   "main": "scripts.js",
   "scripts": {
     "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\""
   },
-  "author": "",
+  "author": "Caterina Paun",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.12.5 <2.23.2"
