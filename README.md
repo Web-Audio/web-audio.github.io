@@ -1,13 +1,16 @@
 <p align="center">
   <img alt="VOIS.AI" src="#" width="60" />
+  <h1 align="center">VOIS.AI</h3>
 </p>
 
-<h1 align="center">VOIS.AI</h3>
+<h3 align="center">
+  Transcribe and Examine Speech
+</h3>
 <p align="center">
-  <h3><strong>Transcribe and Examine Speech</strong></h3>
-  <p>Copyright &copy; 2018 Caterina Paun</p>
+  Copyright &copy; 2018 Caterina Paun
 </p>
-<br>
+<br/>
+
 <p align="center">
   <a href="https://github.com/Web-Audio/web-audio.github.io/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="VOIS.AI is released under the MIT license." />
@@ -19,6 +22,7 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
 </p>
+<br/>
 
 ## 🎙️ What is VOIS.AI? 
 
