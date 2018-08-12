@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-60-60 (transparent bg)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="logo-60-60-(transparent-bg)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M43.180705,29 C43.216835,35.9009089 38.0457102,41 30.5903525,41 C23.1349948,41 17.96387,35.9009089 18,29" id="Combined-Shape" stroke="#4AB98B" stroke-width="4"></path>
+        <path d="M33,48 L38.5,48 C39.3284271,48 40,48.6715729 40,49.5 L40,50.5 C40,51.3284271 39.3284271,52 38.5,52 L22.5,52 C21.6715729,52 21,51.3284271 21,50.5 L21,49.5 C21,48.6715729 21.6715729,48 22.5,48 L29,48 L29,39 L33,39 L33,48 Z" id="Combined-Shape" fill="#4AB98B"></path>
+        <path d="M22,15 C22,11.1340068 25.8055796,8 30.5,8 C35.1944204,8 39,11.1340068 39,15 L39,29 C39,32.8659932 35.1944204,36 30.5,36 C25.8055796,36 22,32.8659932 22,29 L22,15 Z" id="Combined-Shape" fill="#4AB98B"></path>
+        <circle id="Oval-2" fill="#4AB98B" cx="18" cy="29" r="2"></circle>
+        <circle id="Oval-2-Copy" fill="#4AB98B" cx="43.2" cy="29" r="2"></circle>
+    </g>
+</svg>
