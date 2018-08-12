@@ -22,16 +22,18 @@ h1, h4 {
 }
 
 p {
-  margin: 0 0 3rem;
+  margin: 0 0 0;
 }
 
 .words, .analytics {
   max-width: 800px;
+  min-height: 50px;
+  max-height: 100px;
+  overflow: scroll;
   margin: 20px auto;
   background: white;
   border-radius: 3px;
   padding: 1rem 2rem;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
   background-size: 100% 3rem;
   position: relative;
   line-height: 3rem;
@@ -42,7 +44,7 @@ p {
   margin: 10px;
 }
 
-#analyze_btn {
+#analyzeButton {
   float: right;
-  margin-right: 200px;
+  margin-right: 520px;
 }
