@@ -1,42 +1,86 @@
-html {
-  font-size: 12px;
-}
-
 body {
-  background: #d2691e;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  font-size: 20px;
 }
 
-h1 {
-  font-weight: 400px;
-  font-size: 3em;
-  font-family: Futura, sans-serif;
+header {
+  background-color: #4ab98b;
 }
 
-h1, h4 {
-  color: #fafafa;
+footer {
+  background-color: #4ab98b;
+  position: absolute;
+  color: #fefefe;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+}
+
+footer > p {
+  padding: 25px 80px 0;
+}
+
+img {
+  height: 80px;
+}
+
+.logo {
+  padding: 10px 0;
   text-align: center;
-  margin-top: 2rem;
 }
 
-p {
-  margin: 0 0 0;
+.jumbotron {
+  background-color: #fefefe;
+  margin-top: -60px;
 }
 
-.words, .analytics {
-  max-width: 800px;
-  min-height: 50px;
-  max-height: 100px;
-  overflow: scroll;
-  margin: 20px auto;
-  background: white;
-  border-radius: 3px;
-  padding: 1rem 2rem;
+.jumbotron p {
+  font-size: 16px;
+}
+
+.one-third {
+  float: left;
+  width: 45%;
+}
+
+.two-thirds {
+  float: left;
+  width: 55%;
+}
+
+.box {
+  padding: 10px 100px 20px;
+}
+
+.paper {
+  max-width: 100%;
+  min-height: 500px;
+  margin: 30px auto;
+  background: #fefefe;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  padding: 1rem 2rem 1rem 5rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
   background-size: 100% 3rem;
   position: relative;
   line-height: 3rem;
+}
+
+.paper:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 40px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #f685b4;
+}
+
+.paper p {
+  margin: 0 0 0;
 }
 
 .chart > div {
@@ -44,7 +88,31 @@ p {
   margin: 10px;
 }
 
-#analyzeButton {
-  float: right;
-  margin-right: 520px;
+.btn {
+  margin-right: 10px;
+}
+
+.btn-default {
+  background-color: #4ab98b;
+  color: #fefefe;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  background-color: #137d51;
+  color: #fefefe;
+}
+
+.btn-inverse {
+  border: 1px solid #4ab98b;
+  color: #4ab98b;
+}
+
+.btn-inverse:hover, .btn-default:focus {
+  border: 1px solid #137d51;
+  color: #137d51;
+}
+
+#analyticsDiv {
+  min-height: 400px;
+  background-color: #f3f3f3;
 }
