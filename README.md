@@ -1,6 +1,5 @@
 <p align="center">
-  <img alt="VOIS.AI" src="imgs/logo-60.svg" width="100" />
-  <h1 align="center">VOIS.AI</h3>
+  <img alt="VOIS.AI" src="imgs/logo-160-60-transparent.svg" width="300" />
 </p>
 
 <p align="center">
@@ -12,8 +11,8 @@
   <a href="https://github.com/Web-Audio/web-audio.github.io/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="VOIS.AI is released under the MIT license." />
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/npm/v/gatsby.svg?style=flat-square" alt="Current npm package version." />
+  <a href="https://badge.fury.io/js/npm.svg">
+    <img src="https://badge.fury.io/js/npm.svg" alt="npm package version" />
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
@@ -21,11 +20,11 @@
 </p>
 <br/>
 
-## 🎙️ What is VOIS.AI? 
+## 🎙️ What is VOIS.AI 🎙️ 
 
 VOIS.AI is a web application that examines a person's speech and share important information about said speech. The goal of the app is to analyze a person’s speech to understand what words a person tends to use too often and what words that person should avoid, such as “like,” “I mean,” “you know,” etc. This application is for everyone who wants to learn more about how they speak. We are specifically targeting conference speakers who like to rehearse their talks prior to giving them at the conference. We are also targeting working professionals who give many presentations as part of their work. 
 
-## 🚀 Getting Started
+## 🚀 Getting Started 🚀 
 
 1.  Download the code to your local machine.
 
@@ -56,29 +55,32 @@ VOIS.AI is a web application that examines a person's speech and share important
     You can view and use the application at the following URL: [http://localhost:3000/index.html](http://localhost:3000/index.html). Any changes you make to your code will need to be saved; the browser will update in real time. 
 
 
-## 🖥️ Contributing to the Project
+## 🖥️ Contributing to the Project 🖥️
 
 Help is always welcome and appreciated! 
 
-### Issue Tracker
+#### Issue Tracker
 
 Please submit any issues using the [Issue Tracker](https://github.com/Web-Audio/web-audio.github.io/issues).
 
-### License
-
-This work is licensed under the MIT License. See the file [LICENSE](https://github.com/Web-Audio/web-audio.github.io/blob/master/LICENSE) for the license terms.
-
-### How to Contribute Guide
+#### How to Contribute
 
 Check out this `How to Contribute` guide.
 
-### Code of Conduct
+#### Code of Conduct
 
 VOIS.AI is committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic, as outlined in the [Citizen Code of Conduct](http://citizencodeofconduct.org/). 
 
-## 🙋 Credits
+## 🗒️ License 🗒️
 
+This work is licensed under the MIT License. See the file [LICENSE](https://github.com/Web-Audio/web-audio.github.io/blob/master/LICENSE) for the license terms.
+
+## 🙋 Credits 🙋
+
+#### Main Contributor(s)
 * <a href="https://github.com/caterinasworld">Caterina Paun</a>
 
-
+#### Articles Used for this Project
+* [HTML5 Speech Recognition API](https://shapeshed.com/html5-speech-recognition-api/)
+* [Remove Stop Words in JavaScript](http://geeklad.com/remove-stop-words-in-javascript)
 
