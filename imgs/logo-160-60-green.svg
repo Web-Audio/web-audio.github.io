@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="60px" viewBox="0 0 164 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-160-60 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="logo-160-60-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#4AB98B" x="0" y="0" width="164" height="60"></rect>
+        <path d="M43,29 C43.0358707,35.9009089 37.9018556,41 30.5,41 C23.0981444,41 17.9641293,35.9009089 18,29" id="Combined-Shape" stroke="#FEFEFE" stroke-width="4"></path>
+        <path d="M33,48 L38,48 C39.1045695,48 40,48.8954305 40,50 C40,51.1045695 39.1045695,52 38,52 L23,52 C21.8954305,52 21,51.1045695 21,50 C21,48.8954305 21.8954305,48 23,48 L29,48 L29,39 L33,39 L33,48 Z" id="Combined-Shape" fill="#FEFEFE"></path>
+        <path d="M22,16 C22,12.1340068 25.8055796,9 30.5,9 C35.1944204,9 39,12.1340068 39,16 L39,30 C39,33.8659932 35.1944204,37 30.5,37 C25.8055796,37 22,33.8659932 22,30 L22,16 Z" id="Combined-Shape" fill="#FEFEFE"></path>
+        <circle id="Oval-2" fill="#FEFEFE" cx="18" cy="29" r="2"></circle>
+        <circle id="Oval-2-Copy" fill="#FEFEFE" cx="43" cy="29" r="2"></circle>
+        <text id="VOIS.AI" font-family="Roboto-Medium, Roboto" font-size="28" font-weight="400" fill="#FEFEFE">
+            <tspan x="55" y="41">VOIS.AI</tspan>
+        </text>
+    </g>
+</svg>
