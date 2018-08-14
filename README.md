@@ -22,7 +22,12 @@
 
 ## 🎙️ What is VOIS.AI 🎙️ 
 
-VOIS.AI is a web application that examines a person's speech and share important information about said speech. The goal of the app is to analyze a person’s speech to understand what words a person tends to use too often and what words that person should avoid, such as “like,” “I mean,” “you know,” etc. This application is for everyone who wants to learn more about how they speak. We are specifically targeting conference speakers who like to rehearse their talks prior to giving them at the conference. We are also targeting working professionals who give many presentations as part of their work. 
+VOIS.AI is a web application that transcribes and examines a person's speech, in order to outline important information how a person speaks. 
+
+The goal of the app is to analyze speech to understand what words a person tends to use too often and what words that person should avoid, such as “like”, well”, “I mean”, etc. 
+
+This application is for everyone who wants to learn more about how they speak. We are specifically targeting working professionals who give regular presentations as part of their work.
+
 
 ## 🚀 Getting Started 🚀 
 
