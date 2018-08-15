@@ -7,11 +7,12 @@
     "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\""
   },
   "author": "Caterina Paun",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.12.5 <2.23.2"
   },
   "dependencies": {
+    "add-license": "0.0.1",
     "count-words-occurrence": "^1.0.0"
   }
 }

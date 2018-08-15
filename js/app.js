@@ -1,3 +1,27 @@
+/**
+* MIT License
+*
+* Copyright (c) 2018 Caterina Paun
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
 // Start with init() function on page load
 window.addEventListener('load', init, false);
 // console.log(stopwords);
@@ -15,7 +39,7 @@ function init() {
     console.log(testSpeech);
   }
   catch(e) {
-    alert('Web Audio API is not supported in this browser');
+    alert('Web Speech API is not supported in this browser');
   }
 
   testSpeech.onerror = function(event) {
@@ -48,10 +72,10 @@ function startSpeech() {
       .map(result => result.transcript)
       .join('');
 
-      const replaceScript = transcript.replace(/hello/gi, 'HELLO')
-                            .replace(/like/gi, 'LIKE')
-                            .replace(/dog/gi, '🐕')
-                            .replace(/aced/gi, '💯')
+      console.log(e.results);
+
+
+      const replaceScript = transcript.replace(/dog/gi, '🐕')
                             .replace(/emoji|emojis/gi, '😁');
       p.textContent = replaceScript;
 
@@ -65,8 +89,7 @@ function startSpeech() {
       var stopWords = /(?:^|\s+)(?:the|and|a|or|in|on)(?=\s+|$)/gi;
       arr = textstring.replace(stopWords, "").trim();
 
-      console.log("===============????");
-      console.log("teststring", arr);
+      // console.log("teststring", arr);
 
       arr = textstring.split(" ");
       printResults();
@@ -106,6 +129,10 @@ function printResults() {
       document.getElementById("analyticsCount").innerHTML += output + "<br/>";
     }
   }
+}
+
+function highlightWords(val) {
+  console.log(val);
 }
 
 function clearSpeech() {

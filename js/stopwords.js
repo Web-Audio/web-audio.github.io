@@ -1,7 +1,32 @@
+/**
+* MIT License
+*
+* Copyright (c) 2018 Caterina Paun
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
 // List of stop words used in natural language processing for this project.
 // A stop word refers to the most common words in a language.
 
-// The list below was taken from: http://geeklad.com/remove-stop-words-in-javascript
+// The list below was taken from: http://geeklad.com/remove-stop-words-in-javascript.
+// Several updates were made to the original list for the purposes of this project.
 let stopwords = new Array (
         'a',
         'about',
@@ -12,7 +37,6 @@ let stopwords = new Array (
         'against',
         'all',
         'almost',
-        'alone',
         'along',
         'already',
         'also',
@@ -40,14 +64,10 @@ let stopwords = new Array (
         'away',
         'b',
         'back',
-        'backed',
-        'backing',
         'backs',
         'be',
         'became',
         'because',
-        'become',
-        'becomes',
         'been',
         'before',
         'began',
@@ -82,7 +102,6 @@ let stopwords = new Array (
         'does',
         'done',
         'down',
-        'down',
         'downed',
         'downing',
         'downs',
@@ -105,10 +124,6 @@ let stopwords = new Array (
         'everything',
         'everywhere',
         'f',
-        'face',
-        'faces',
-        'fact',
-        'facts',
         'far',
         'felt',
         'few',
@@ -121,9 +136,6 @@ let stopwords = new Array (
         'full',
         'fully',
         'further',
-        'furthered',
-        'furthering',
-        'furthers',
         'g',
         'gave',
         'general',
@@ -141,10 +153,6 @@ let stopwords = new Array (
         'great',
         'greater',
         'greatest',
-        'group',
-        'grouped',
-        'grouping',
-        'groups',
         'h',
         'had',
         'has',
@@ -166,12 +174,7 @@ let stopwords = new Array (
         'however',
         'i',
         'if',
-        'important',
         'in',
-        'interest',
-        'interested',
-        'interesting',
-        'interests',
         'into',
         'is',
         'it',
@@ -210,8 +213,6 @@ let stopwords = new Array (
         'many',
         'may',
         'me',
-        'member',
-        'members',
         'men',
         'might',
         'more',
@@ -224,13 +225,6 @@ let stopwords = new Array (
         'my',
         'myself',
         'n',
-        'necessary',
-        'need',
-        'needed',
-        'needing',
-        'needs',
-        'never',
-        'new',
         'new',
         'newer',
         'newest',
@@ -256,15 +250,7 @@ let stopwords = new Array (
         'once',
         'one',
         'only',
-        'open',
-        'opened',
-        'opening',
-        'opens',
         'or',
-        'order',
-        'ordered',
-        'ordering',
-        'orders',
         'other',
         'others',
         'our',
@@ -277,19 +263,7 @@ let stopwords = new Array (
         'parts',
         'per',
         'perhaps',
-        'place',
-        'places',
-        'point',
-        'pointed',
-        'pointing',
-        'points',
         'possible',
-        'present',
-        'presented',
-        'presenting',
-        'presents',
-        'problem',
-        'problems',
         'put',
         'puts',
         'q',
@@ -299,16 +273,12 @@ let stopwords = new Array (
         'really',
         'right',
         'right',
-        'room',
-        'rooms',
         's',
         'said',
         'same',
         'saw',
         'say',
         'says',
-        'second',
-        'seconds',
         'see',
         'seem',
         'seemed',
@@ -335,8 +305,6 @@ let stopwords = new Array (
         'someone',
         'something',
         'somewhere',
-        'state',
-        'states',
         'still',
         'such',
         'sure',
@@ -414,10 +382,6 @@ let stopwords = new Array (
         'with',
         'within',
         'without',
-        'work',
-        'worked',
-        'working',
-        'works',
         'would',
         'x',
         'y',
@@ -425,9 +389,6 @@ let stopwords = new Array (
         'years',
         'yet',
         'you',
-        'young',
-        'younger',
-        'youngest',
         'your',
         'yours',
         'z'
