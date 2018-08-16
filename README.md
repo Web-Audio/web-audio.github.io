@@ -20,16 +20,16 @@
 </p>
 <br/>
 
-## 🎙️ What is VOIS.AI 🎙️ 
+## 🎙️ What is VOIS.AI 🎙️
 
-VOIS.AI is a web application that transcribes and examines a person's speech, in order to outline important information how a person speaks. 
+VOIS.AI is a web application that transcribes and examines a person's speech, in order to outline important information about how a person speaks.
 
-The goal of the app is to analyze speech to understand what words a person tends to use too often and what words that person should avoid, such as “like”, well”, “I mean”, etc. 
+The goal of the app is to analyze speech to understand what words a person tends to use too often and what words that person should avoid, such as “like”, well”, “I mean”, etc.
 
 This application is for everyone who wants to learn more about how they speak. We are specifically targeting working professionals who give regular presentations as part of their work.
 
 
-## 🚀 Getting Started 🚀 
+## 🚀 Getting Started 🚀
 
 1.  Download the code to your local machine.
 
@@ -38,7 +38,7 @@ This application is for everyone who wants to learn more about how they speak. W
     clone https://github.com/Web-Audio/web-audio.github.io
     ```
 
-2.  Install project dependencies. 
+2.  Install project dependencies.
 
     ```sh
     # check that you have both Node and npm installed
@@ -57,12 +57,12 @@ This application is for everyone who wants to learn more about how they speak. W
 
 4.  Open the source code and start editing.
 
-    You can view and use the application at the following URL: [http://localhost:3000/index.html](http://localhost:3000/index.html). Any changes you make to your code will need to be saved; the browser will update in real time. 
+    You can view and use the application at the following URL: [http://localhost:3000/index.html](http://localhost:3000/index.html). Any changes you make to your code will need to be saved; the browser will update in real time.
 
 
 ## 🖥️ Contributing to the Project 🖥️
 
-Help is always welcome and appreciated! 
+Help is always welcome and appreciated!
 
 #### Issue Tracker
 
@@ -74,7 +74,7 @@ Check out this `How to Contribute` guide.
 
 #### Code of Conduct
 
-VOIS.AI is committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic, as outlined in the [Citizen Code of Conduct](http://citizencodeofconduct.org/). 
+VOIS.AI is committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic, as outlined in our [Code of Conduct](https://github.com/Web-Audio/web-audio.github.io/blob/master/CODE_OF_CONDUCT.md), which is based on the [Citizen Code of Conduct](http://citizencodeofconduct.org/).
 
 ## 🗒️ License 🗒️
 
@@ -88,4 +88,4 @@ This work is licensed under the MIT License. See the file [LICENSE](https://gith
 #### Articles Used for this Project
 * [HTML5 Speech Recognition API](https://shapeshed.com/html5-speech-recognition-api/)
 * [Remove Stop Words in JavaScript](http://geeklad.com/remove-stop-words-in-javascript)
-
+* [Notepad Paper in CSS](https://coderwall.com/p/fw_b4q/notebook-paper-css)
