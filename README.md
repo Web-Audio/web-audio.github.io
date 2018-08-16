@@ -22,7 +22,7 @@
 
 ## 🎙️ What is VOIS.AI 🎙️
 
-VOIS.AI is a web application that transcribes and examines a person's speech, in order to outline important information about how a person speaks.
+VOIS.AI is a web application that transcribes and examines a person's speech, in order to outline important information  about how a person speaks.
 
 The goal of the app is to analyze speech to understand what words a person tends to use too often and what words that person should avoid, such as “like”, well”, “I mean”, etc.
 
@@ -88,4 +88,3 @@ This work is licensed under the MIT License. See the file [LICENSE](https://gith
 #### Articles Used for this Project
 * [HTML5 Speech Recognition API](https://shapeshed.com/html5-speech-recognition-api/)
 * [Remove Stop Words in JavaScript](http://geeklad.com/remove-stop-words-in-javascript)
-* [Notepad Paper in CSS](https://coderwall.com/p/fw_b4q/notebook-paper-css)
