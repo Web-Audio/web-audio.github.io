@@ -70,7 +70,7 @@ Please submit any issues using the [Issue Tracker](https://github.com/Web-Audio/
 
 #### How to Contribute
 
-Check out this `How to Contribute` guide.
+Check out this [How to Contribute](https://github.com/Web-Audio/web-audio.github.io/blob/master/CONTRIBUTING.md) guide.
 
 #### Code of Conduct
 
