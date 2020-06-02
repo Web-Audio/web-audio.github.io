@@ -1,5 +1,5 @@
 {
-  "name": "VOIS.AI",
+  "name": "vois-ai",
   "version": "1.0.0",
   "description": "A web app to transcribe and examine the way a person talks.",
   "main": "scripts.js",
@@ -9,7 +9,8 @@
   "author": "Caterina Paun",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.12.5 <2.23.2"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "add-license": "0.0.1",
